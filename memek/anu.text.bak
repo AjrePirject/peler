@@ -1,0 +1,47 @@
+const fs = require('fs')
+
+global.d = new Date()
+global.calender = d.toLocaleDateString('id')
+
+    //General Settings 
+global.prefix = ['','!','.',',','🐤','🗿']
+global.owner = '6287897108158'
+global.sessionName = 'session'
+global.botname = 'N-Moshyy TenseiiX'
+global.author = 'V-moshyy'
+global.packname = '— call me'
+global.bodyfooter = 'Moshyy Tech'
+global.idch = '120363335981323407@newsletter'
+global.email = 'kunazre@gmail.com'
+
+global.thumbnail = "https://files.catbox.moe/0xyd6o.jpg"
+
+global.autoswview = false
+global.isBot = false
+
+global.thumb = "https://cdn.meitang.xyz/tmp/hffm9sjkvoqu71fuwnqu.jpg"
+global.urldb = ""
+
+global.bug = {
+   aaa: "ザ N-Ɱσʂԋყყ 𝕮𝖗𝖆𝖘𝖍",
+   bbb: "N-Ɱσʂԋყყ UʅƚιɱαƚҽX 🪙",
+   ccc: "ザ N-Ɱσʂԋყყ 𝕮𝖗𝖆𝖘𝖍 ✨"
+}
+
+global.mess = {
+ingroup: "It's not funny, this feature is only for groups💢",
+admin: "not funny, only group admins use this feature💢",
+owner: "Wow! You're not my owner🗣️",
+premium: "you are not a premium user",
+seller: "You don't have access as a seller yet",
+wait: "please just wait ngab"
+}
+
+global.autOwn = 'req(62-8S57547ms11).287p'
+let file = require.resolve(__filename)
+require('fs').watchFile(file, () => {
+  require('fs').unwatchFile(file)
+  console.log('\x1b[0;32m'+__filename+' \x1b[1;32mupdated!\x1b[0m')
+  delete require.cache[file]
+  require(file)
+})
